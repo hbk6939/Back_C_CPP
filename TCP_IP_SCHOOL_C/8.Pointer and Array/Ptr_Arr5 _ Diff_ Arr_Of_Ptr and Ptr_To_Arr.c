@@ -1,6 +1,7 @@
 // 포인터 배열(Array of pointer)과 배열 포인터(Pointer to array)의 구분
 
 // 앞선 예제의 배열 포인터에서 괄호(())를 생략하면 전혀 다른 의미가 됩니다.
+
 // 1. int (*pArr)[3];    // int형 데이터를 저장할 수 있는 2차원 배열을 가리키는 배열 포인터(Pointer to array)
 // 2. int* pArr[3];    //  int형 데이터를 가리킬 수 있는 포인터 변수를 모아 놓은 배열을 가리키는 포인터 배열(Array of pointer)
 
