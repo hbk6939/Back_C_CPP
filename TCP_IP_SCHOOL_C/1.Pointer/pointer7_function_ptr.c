@@ -12,25 +12,36 @@ int main(void)
 	double result = 0;
 	
 	double num01 = 3, num02 = 5;
-	char oper = '/';
+	char oper;
+	int isTrue = 1;
 
-	switch (oper)
+	while(isTrue)
 	{
-		case '+':
-			calc = add;
-			break;
-		case '-':
-			calc = sub;
-			break;
-		case '*':
-			calc = mul;
-			break;
-		case '/':
-			calc = div;
-			break;
-		default:
-			puts("사칙연산(+, -, *, /)만을 지원합니다.");
+		puts("사칙연산(+, -, *, /) 를 입력하시오");
+		scanf("%c", &oper); while (getchar() != '\n');
+		switch (oper)
+		{
+			case '+':
+				calc = add;
+				isTrue = 0;
+				break;
+			case '-':
+				calc = sub;
+				isTrue = 0;
+				break;
+			case '*':
+				calc = mul;
+				isTrue = 0;
+				break;
+			case '/':
+				calc = div;
+				isTrue = 0;
+				break;
+			default:
+				puts("사칙연산(+, -, *, /)만을 지원합니다.\n");
+		}
 	}
+		
 
 	result = calculator(num01, num02, calc);
 	printf("사칙 연산의 결과는 %lf입니다.\n", result);

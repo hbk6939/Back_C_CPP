@@ -28,7 +28,7 @@ int main(void)
 		for (int j = 0; j < arr_col_len; j++)
 		{
 			printf("arr[%d][%d] : %d\n", i, j, arr[i][j]); // 배열 이름으로 참조
-			printf("pArr[%d][%d] : %d\n\n", i, j, pArr[i][j]); // 배열 포인터로 참조
+			printf("pArr[%d][%d] : %d\n", i, j, pArr[i][j]); // 배열 포인터로 참조
 		}
 	}
 	

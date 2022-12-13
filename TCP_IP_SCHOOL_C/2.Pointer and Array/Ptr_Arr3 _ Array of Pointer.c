@@ -13,7 +13,12 @@ int main(void)
 	arr_len = sizeof(arr)/sizeof(arr[0]);
 	for (i = 0; i < arr_len; i++)
 	{
-		printf("%d\n", *arr[i]);
+		printf("*arr[%d] == %d\n", i, *arr[i]);
+	}
+	
+	for (i = 0; i < arr_len; i++)
+	{
+		printf("arr[%d] == %p\n", i, arr[i]);
 	}
 	
 	return 0;

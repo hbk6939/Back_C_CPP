@@ -21,8 +21,8 @@ int main(void)
 		{"수학1", "강감찬", 10000}
 	};
 	
-	puts("각 교과서의 이름은 다음과 같습니다.");
-	printf("%s, %s, %s\n", text_book[0].title, text_book[1].title, text_book[2].title);
+	puts("\n각 교과서의 이름은 다음과 같습니다.");
+	printf("%s, %s, %s\n\n", text_book[0].title, text_book[1].title, text_book[2].title);
 	return 0;
 }
 
