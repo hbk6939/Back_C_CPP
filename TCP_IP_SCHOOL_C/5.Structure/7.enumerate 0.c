@@ -14,22 +14,22 @@ int main(void)
 	switch (wt)
 	{
 		case SUNNY:
-			puts("오늘은 햇볕이 쨍쨍!");
+			puts("\n오늘은 햇볕이 쨍쨍!");
 			break;
 		case CLOUD:
-			puts("비가 올락말락하네요!");
+			puts("\n비가 올락말락하네요!");
 			break;
 		case RAIN:
-			puts("비가 내려요.. 우산 챙기세요!");
+			puts("\n비가 내려요.. 우산 챙기세요!");
 			break;
 		case SNOW:
-			puts("오늘은 눈싸움하는 날!");
+			puts("\n오늘은 눈싸움하는 날!");
 			break;
 		default:
-			puts("도대체 무슨 날씨인건가요!!!");
+			puts("\n도대체 무슨 날씨인건가요!!!");
 	}
 	
 	puts("각각의 열거체 멤버에 해당하는 정수값은 다음과 같습니다.");
-	printf("%d %d %d %d\n", SUNNY, CLOUD, RAIN, SNOW);
+	printf("%d %d %d %d\n\n", SUNNY, CLOUD, RAIN, SNOW);
 	return 0;
 }
