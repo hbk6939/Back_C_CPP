@@ -8,25 +8,29 @@ int main(void)
     char str[20];
     char ch;  
  
-    puts("당신의 이름을 적어주세요 : ");
-    scanf("%s", str);getchar();
-    puts("당신의 성별을 약자로 적어주세요 : ");
-    puts("(남성=M, 여성=F)");
-    scanf("%c", &ch);getchar();
- 
-    if (ch=='m' | ch=='M')
-    {
-        printf("당신은 남성인 %s입니다.\n", str);
-    }
-    else if(ch=='f' | ch=='F')
-    {
-        printf("당신은 여성인 %s입니다.\n", str);
-    }
-    else
-    {
-        printf("%s님, 성별을 잘못 입력하셨습니다.\n", str);
-    }
-    return 0;
+	while(1)
+	{
+		puts("당신의 이름을 적어주세요 : ");
+		scanf("%s", str);getchar();
+		puts("당신의 성별을 약자로 적어주세요 : ");
+		puts("(남성=M, 여성=F)");
+		scanf("%c", &ch);getchar();
+
+		if (ch=='m' | ch=='M')
+		{
+			printf("당신은 남성인 %s입니다.\n", str);
+		}
+		else if(ch=='f' | ch=='F')
+		{
+			printf("당신은 여성인 %s입니다.\n", str);
+		}
+		else
+		{
+			printf("%s님, 성별을 잘못 입력하셨습니다.\n", str);
+			continue;
+		}
+		return 0;
+	}
 }
 // fflush()은 입력스트림과 관련이 있다고 알고 있지만, 결과적으로는 출력스트림에만 관련이 있습니다.
 // 출력스트림으론 stdout, stderr이 있습니다.
